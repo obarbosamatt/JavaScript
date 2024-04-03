@@ -2,25 +2,29 @@
 
 alert("Bem-vindo ao joguinho da Alura");
 let numeroSecreto = 11;
-console.log(numeroSecreto);
-let chute
+// console.log(numeroSecreto);  console.log deve ser retirado ao ir para producao
+let chute;          // variavel vazia, pois recebera um valor posteriormente
+let tentativas = 1; //ira contabilizar quantidade de tentativas, iniciando em 1
 
 //enquanto (loop)
-while (chute) {
+while (chute != numeroSecreto) {
     chute = prompt("Escolha um numero entre 1 e 15");
-}
 
-//se e senao (condicao)
-if (numeroSecreto == chute) {
-    alert(`Voce descobriu! O numero secreto era ${numeroSecreto}`);
-} else {
-//  codigo antigo -   alert("Errrrrrroooouuuuu! O numero secreto era " + numeroSecreto + " e voce escolheu " + chute);
-    if (numeroSecreto > chute) {
-        alert("O numero secreto eh maior que " + chute);
-    }
-    else {
-        alert(`O numero secreto eh menor que ${chute}`);
-    }
+    //se e senao (condicao)
+    if (numeroSecreto == chute) {
+        alert(`Voce descobriu! O numero secreto era ${numeroSecreto} e so precisou de ${tentativas} tentativas`);
+    } else {
+    //  codigo antigo -   alert("Errrrrrroooouuuuu! O numero secreto era " + numeroSecreto + " e voce escolheu " + chute);
+        if (numeroSecreto > chute) {
+            alert("O numero secreto eh maior que " + chute);
+        }
+        else {
+            alert(`O numero secreto eh menor que ${chute}`);
+        }
+        // tentativas = tentativas + 1; igual ao codigo abaixo, porem menos utilizado
+        tentativas++;
+        // tentativas-- seria usado para diminuir o contador
+      }
 }
 
 
@@ -84,3 +88,38 @@ if (numeroSecreto == chute) {
 //
 //let nomeUser = prompt("Qual seu nome?");
 //alert(nomeUser + ", seja bem-vindo ao sistema");
+
+
+
+// Práticas da Aula 03
+//
+//let contador = 1;
+//while (contador < 11) {
+//    alert("Numero " + contador);
+//    contador++;
+//}
+
+//let contador = 10;
+//while (contador >= 0) {
+//    alert("Numero " + contador);
+//    contador--;
+//}
+
+//let numAleatorio = prompt("Escolha um numero");
+//while (numAleatorio >= 0) {
+//    alert(`Numero ${numAleatorio}`);
+//    numAleatorio--;
+//}
+
+//let numAleatorio = prompt("Escolha um numero");
+//let contador = 0;
+//while (contador <= numAleatorio) {
+//    alert(`Numero ${contador}`);
+//    contador++;
+//}
+
+///////////////////////////////////////////
+//      OPERADORES LOGICOS
+//
+//          AND (&&)
+//           OR (||)
