@@ -1,2 +1,2 @@
 // Iniciando Lógica de Programação
-alert("Hello World!");
+alert("Bem-vindo ao joguinho da Alura");
