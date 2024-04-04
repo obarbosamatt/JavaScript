@@ -1,7 +1,8 @@
 // Iniciando Lógica de Programação com JavaScript
 
 alert("Bem-vindo ao joguinho da Alura");
-let numeroSecreto = parseInt(Math.random() * 100 + 1);
+let numeroMaximo = 5000
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 // parseInt - seleciona apenas a parte inteira do numero
 // Math.random - seleciona um numero aleatótio entre 0 e 1
 console.log(numeroSecreto);  //console.log deve ser retirado ao ir para producao
@@ -10,7 +11,7 @@ let tentativas = 1; //ira contabilizar quantidade de tentativas, iniciando em 1
 
 //enquanto (loop)
 while (chute != numeroSecreto) {
-    chute = prompt("Escolha um numero entre 1 e 100");
+    chute = prompt("Escolha um numero entre 1 e " + numeroMaximo);
 
     //se e senao (condicao)
     if (numeroSecreto == chute) {
@@ -138,24 +139,24 @@ alert(`Voce descobriu! O numero secreto era ${numeroSecreto} e so precisou de ${
 //           OR (||)
 /////////////////////////////////////////////////////////// AULA 04
 
-console.log("Bem-vindo");
-
-let nome = "Matheus";
-console.log(`Ola, ${nome}`);
-
-let nome2 = "Matheus";
-alert("Ola, " + nome2);
-
-let linguagem = prompt("Qual a linguagem de programação que você mais gosta?");
-console.log(linguagem);
-
-let valor1 = 10;
-let valor2 = 20;
-let resultado = valor1 + valor2;
-let resultado2 = valor2 - valor1;
-console.log("A soma de " + valor1 + ` e ${valor2} é igual a ${resultado}.`);
-console.log("A diferenca de " + valor2 + ` e ${valor1} é igual a ${resultado2}.`);
-
-let idade = prompt("Digite sua idade");
-let maiorIdade = idade >= 18 ? "maior" : "menor"
-alert("Voce é ")
+// console.log("Bem-vindo");
+// 
+// let nome = "Matheus";
+// console.log(`Ola, ${nome}`);
+// 
+// let nome2 = "Matheus";
+// alert("Ola, " + nome2);
+// 
+// let linguagem = prompt("Qual a linguagem de programação que você mais gosta?");
+// console.log(linguagem);
+// 
+// let valor1 = 10;
+// let valor2 = 20;
+// let resultado = valor1 + valor2;
+// let resultado2 = valor2 - valor1;
+// console.log("A soma de " + valor1 + ` e ${valor2} é igual a ${resultado}.`);
+// console.log("A diferenca de " + valor2 + ` e ${valor1} é igual a ${resultado2}.`);
+// 
+// let idade = prompt("Digite sua idade");
+// let maiorIdade = idade >= 18 ? "maior" : "menor"
+// alert("Voce é ")
